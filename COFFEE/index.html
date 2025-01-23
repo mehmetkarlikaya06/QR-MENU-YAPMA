@@ -1,0 +1,2081 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menü Örnek</title>
+    <link rel="stylesheet" href="ayi.style.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .menu-container { margin-bottom: 10px; }
+        .menu-item { display: flex; margin-right: 6px; }
+        section { margin: 40px 0; }
+    </style>
+</head>
+<body>
+     <header class="header">
+        <div class="logo">
+        </div>
+       
+    </header> 
+
+
+
+
+<div class="menu-container">
+    <h1 class="title111">Ayı Coffee</h1>
+    <div class="menu-item"><a href="#kahvaltılar">Kahvaltılar</a></div>
+    <div class="menu-item"><a href="#ayılezzetler">Ayı Lezzetleri</a></div>
+    <div class="menu-item"><a href="#ayitostlar">Ayı Tostlar Ve Lezzetler</a></div>
+    <div class="menu-item"><a href="#pupsçitirlar">Pups Çıtırlar</a></div>
+    <div class="menu-item"><a href="#kumpir">Kumpir</a></div>
+    <div class="menu-item"><a href="#ayipup">Ayı Pup Tatlılar</a></div>
+    <div class="menu-item"><a href="#sogukicecekler">Soğuk İçecekler</a></div>
+    <div class="menu-item"><a href="#kokteyler">Kokteyler</a></div>
+    <div class="menu-item"><a href="#ayispecial">Ayı Special</a></div>
+    <div class="menu-item"><a href="#bubbletea">Bubble Tea</a></div>
+    <div class="menu-item"><a href="#baristaninruhhali">Baristanın Ruh Hali</a></div>
+    <div class="menu-item"><a href="#filtrekahveler">Filtre Kahveler</a></div>
+    <div class="menu-item"><a href="#meyvebitkicaylari">Meyve & Bitki Çayları</a></div>
+    <div class="menu-item"><a href="#kahvecesitleri">Kahve Çeşitleri</a></div>
+    <div class="menu-item"><a href="#sıkmaicecekler">Sıkma İçecekler</a></div>
+    <div class="menu-item"><a href="#sicakspecial">Sıcak Special İçecekler</a></div>
+    <div class="menu-item"><a href="#sogukkahveler">Soğuk Kahveler</a></div>
+    <div class="menu-item"><a href="#sahlepçikolata">Sahlep & Çikolata Çeşitleri</a></div>
+    <div class="menu-item"><a href="#caycesitleri">Çay Çeşitleri</a></div>
+    <div class="menu-item"><a href="#turkkahveleri">Türk Kahveleri</a></div>
+    <div class="menu-item"><a href="#icecekler">İçecekler</a></div>
+    <div class="menu-item"><a href="#nargile">Nargile</a></div>
+
+
+</div>
+
+<div class="card" style="background-color: rgb(255, 255, 255);">
+    <div class="card-title">
+        <h2 class="urun-adi"style="left:125px;"> </h2>
+    </div>
+    <h5 class="card-fiyat"></h5>
+</div>
+<!-- İçerik Bölümleri -->
+
+
+
+<section id="kahvaltılar" style="padding: 20px 0px">
+    <h2 class="titleh2">Kahvaltılar</h2>
+    <!-- Birinci Ürün -->
+    <div class="card" >
+        <!-- Resim -->
+        <img src="imgs/serpmekahvalti.jpeg" alt="Serpme Kahvaltı" style="left:-126px;" class="urun-resmi">
+        
+        <!-- Başlık ve Detaylar -->
+        <div>
+            <div class="card-title">
+                <h2 class="urun-adi" style="font-size: 18px;">Serpme Kahvaltı (2 Kişilik)</h2>
+            </div>
+            <h5 class="card-fiyat">600 ₺</h5>
+            <h5 class="detaylar"  onclick="togglePopup('popup-1')">Detaylar</h5>
+
+            <div class="popup" id="popup-1">
+                <div class="overlay" onclick="togglePopup('popup-1')"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup('popup-1')">&times;</div>
+                    <h1 style="position: relative; top: -5%; font-size: 22px;">Serpme Kahvaltı <br> (2 Kişilik)</h1>
+                    <p style="font-size: 14px; position: relative; top: -20px;">Sahanda Yumurta, Patates Kızartması, Sosis, Sigara Böreği, Gözleme, Kaymak Bal, Reçel, Yumurtalı Ekmek, Domates Salatalık, Ezme Tereyağı, Yeşil Zeytin, Tahin Pekmez, Kaşar, Peynir Çeşitleri, Sürülebilir Çikolata, Sınırsız Çay</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        <!-- İkinci Ürün -->
+        <div class="card">
+            <img src="imgs/kahvalti2.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+            <div h2 class="urun-adi" style="left:24px; top:-50px">Kahvaltı Tabağı</h2>
+
+            </div>
+            <h5 class="card-fiyat">280 ₺</h5>
+            <h5 class="detaylar" style="top:-41px; "  onclick="togglePopup('popup-2')">Detaylar</h5>
+    
+            <div class="popup" id="popup-2">
+                <div class="overlay" onclick="togglePopup('popup-2')"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup('popup-2')">&times;</div>
+                    <h1>Serpme Kahvaltı</h1>
+                    <p style="position: relative;top: -20px;"> <br>2 ÇAY İLE SINIRLIDIR <br> Omlet,patates kızartması,sosis,sigara böreği,yumurtalı ekmek ,reçel,ezme,bal,peynir çeşitleri,salatalık,kaşar zeytin</p>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="card">
+                    <img src="imgs/ayiomlet3.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+            <div class="card-title">
+                <h2 class="urun-adi"style="left:117px;">Ayı Omlet</h2>
+            </div>
+            <h5 class="card-fiyat">120 ₺</h5>
+        </div>
+        <div class="card">
+            <img src="imgs/menemen4.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+            <div class="card-title">
+                <h2 class="urun-adi"style="left:115px;">Menemen</h2>
+            </div>
+            <h5 class="card-fiyat">120 ₺</h5>
+        </div>
+        <div class="card">
+            <img src="imgs/menemen5.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+            <div class="card-title">
+                <h2 class="urun-adi" style="left: 90px;">Kaşarlı Menemen</h2>
+            </div>
+            <h5 class="card-fiyat">140 ₺</h5>
+        </div>
+
+</section>
+
+
+
+
+<section id="ayılezzetler">
+    <div class="imgler" >
+    </div>
+
+    <h2  class="titleh2" >Ayı  Lezzetler</h2>
+<!-- popup3 den popup 14 e kadaar -->
+    <div class="card" >
+                <img src="imgs/wrap6.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:100px;">Chicken Wrap</h2>
+        </div>
+        <h5 class="card-fiyat">200 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-3')">Detaylar</h5>
+    
+        <div class="popup" id="popup-3">
+            <div class="overlay" onclick="togglePopup('popup-3')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-3')">&times;</div>
+                <h1>Chicken Wrap</h1>
+                <p> Tavuk, kapya biber,çarliston biber,mantar,tane mısır,soya sos,patates kızartması,ayı sos</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+                <img src="imgs/wrap7.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size: 18px; left:80px ;"> Cheddar Chicken Wrap</h2>
+        </div>
+        <h5 class="card-fiyat">220 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-4')">Detaylar</h5>
+    
+        <div class="popup" id="popup-4">
+            <div class="overlay" onclick="togglePopup('popup-4')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-4')">&times;</div>
+                <h1>Cheddar Chicken Wrap</h1>
+                <p> Tavuk, cheddar,kapya biber,çarliston biber,mantar,tane mısır,soya sos,patates kızartması,ayı sos</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/plsalata8.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size:18px;left:85px ;">Baharatlı Piliç Salata</h2>
+        </div>
+        <h5 class="card-fiyat">160 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-5')">Detaylar</h5>
+    
+        <div class="popup" id="popup-5">
+            <div class="overlay" onclick="togglePopup('popup-5')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-5')">&times;</div>
+                <h1>Baharatlı Piliç Salata</h1>
+                <p> Baharatlı tavuk , yeşillik ,tane mısır,havuç</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/kori9.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:95px ;">Köri Soslu Tavuk</h2>
+        </div>
+        <h5 class="card-fiyat">220 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-6')">Detaylar</h5>
+    
+        <div class="popup" id="popup-6">
+            <div class="overlay" onclick="togglePopup('popup-6')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-6')">&times;</div>
+                <h1>Köri Soslu Tavuk</h1>
+                <P>Tavuk,köri baharatı,kapya biber,çarliston biber,mantar,krema,tereyağlı sebzeli erişte,elma dilim patates </P>
+                </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/bbtavuk10.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:95px ;">BBQ Soslu Tavuk</h2>
+        </div>
+        <h5 class="card-fiyat">220 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-7')">Detaylar</h5>
+    
+        <div class="popup" id="popup-7">
+            <div class="overlay" onclick="togglePopup('popup-7')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-7')">&times;</div>
+                <h1>BBQ Soslu Tavuk</h1>
+                <P>Tavuk,BBQ sos,kapya biber,çarliston biber,mantar,krema,tereyağlı sebzeli erişte,elma dilim patates </P>
+                 
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/fres11.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size:18px;left:75px ;">Bear Fresh Çıtır Tavuk </h2>
+        </div>
+        <h5 class="card-fiyat">170 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-8')">Detaylar</h5>
+    
+        <div class="popup" id="popup-8">
+            <div class="overlay" onclick="togglePopup('popup-8')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-8')">&times;</div>
+                <h1>Bear Fresh Çıtır Tavuk Dilimleri</h1>   
+                <p>Tavuk ,patates kızartması,fresh sos ve ayı sos eşliğinde</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/ctsepet12.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 95px;">Çıtır Kase/Sepeti</h2>
+        </div>
+        <h5 class="card-fiyat">160 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-9')">Detaylar</h5>
+    
+        <div class="popup" id="popup-9">
+            <div class="overlay" onclick="togglePopup('popup-9')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-9')">&times;</div>
+                <h1>Çıtır Kase/Sepeti</h1>
+                <p>İki adet sigara böreği 4 adet nugget,2 adet yıldız sos,2 adet soğan halkası,patates kızartması</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/chicken13.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size:18px; left: 70px;">Bear Pup Chicken Burger</h2>
+        </div>
+        <h5 class="card-fiyat">160 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-10')">Detaylar</h5>
+    
+        <div class="popup" id="popup-10">
+            <div class="overlay" onclick="togglePopup('popup-10')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-10')">&times;</div>
+                <h1>Bear Pup Chicken Burger</h1>
+                <p>Tavuk,domates,turşu,kıvırcık,patates kızartması,ayı sos</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/ayiburger14.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:115px;">Ayı Burger</h2>
+        </div>
+        <h5 class="card-fiyat">230 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-11')">Detaylar</h5>
+    
+        <div class="popup" id="popup-11">
+            <div class="overlay" onclick="togglePopup('popup-11')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-11')">&times;</div>
+                <h1>Ayı Burger</h1>
+                <p>180 gr burger köfte,cheddar,domates,turşu,kıvırcık,patates kızartması ve ayı sos eşliğinde</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/ayiburger14.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title" >
+            <h2 class="urun-adi" style="left:115px;">Hamburger</h2>
+        </div>
+        <h5 class="card-fiyat">180 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-12')">Detaylar</h5>
+    
+        <div class="popup" id="popup-12">
+            <div class="overlay" onclick="togglePopup('popup-12')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-12')">&times;</div>
+                <h1>Hamburger</h1>
+                <p>90 gr burger köfte,domates,turşu,kıvırcık,patates kızartması ve ayı sos eşliğinde</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/cizbiz16.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:110px;">Cızbız Köfte </h2>
+        </div>
+        <h5 class="card-fiyat">200 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-13')">Detaylar</h5>
+    
+        <div class="popup" id="popup-13">
+            <div class="overlay" onclick="togglePopup('popup-13')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-13')">&times;</div>
+                <h1>Cızbız Köfte</h1>
+                <p>Patates kızartması ve ayı sos eşliğinde</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/izgara17.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 90px;">Enfes Tavuk Izgara</h2>
+        </div>
+        <h5 class="card-fiyat">180 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-14')">Detaylar</h5>
+    
+        <div class="popup" id="popup-14">
+            <div class="overlay" onclick="togglePopup('popup-14')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-14')">&times;</div>
+                <h1>Enfes Tavuk Izgara</h1>
+                <p>Patates kızartması ve ayı sos eşliğinde</p>
+            </div>
+        </div>
+    </div>
+
+
+   
+   
+</section>
+
+
+
+
+<section id="ayitostlar">
+    <div class="imgler">
+    </div>
+    <h2 class="titleh2">Ayı Tostlar ve Gözlemeler</h2>
+
+    <div class="card">
+                <img src="imgs/anabaz18.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size: 18px; left: 80px;">Anadolu Bazlama Tost</h2>
+        </div>
+        <h5 class="card-fiyat">150 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-15')">Detaylar</h5>
+    
+        <div class="popup" id="popup-15">
+            <div class="overlay" onclick="togglePopup('popup-15')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-15')">&times;</div>
+                <h1>Anadolu Bazlama Tost</h1>
+                <p>Kaşar peyniri,sucuk,yeşil mayonez eşliğinde,patates kızartması,ayı sos eşliğinde</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/bolbaz19.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size: 18px; left:70px;">Bol Peynirli Bazlama Tost</h2>
+        </div>
+        <h5 class="card-fiyat">150 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-16')">Detaylar</h5>
+    
+        <div class="popup" id="popup-16">
+            <div class="overlay" onclick="togglePopup('popup-16')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-16')">&times;</div>
+                <h1>Bol Peynirli Bazlama Tost</h1>
+                <p>Kaşar peyniri,cheddar peyniri,pesto dip,ayı sos,patates kızartması ve ayı baharat eşliğinde </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/anabaz18.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 120px;">Ayı Tost</h2>
+        </div>
+        <h5 class="card-fiyat">160 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-17')">Detaylar</h5>
+    
+        <div class="popup" id="popup-17">
+            <div class="overlay" onclick="togglePopup('popup-17')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-17')">&times;</div>
+                <h1>Ayı Tost</h1>
+                <p>Kaşar Peyniri ,cheddar peynir,sucuk,ayı sos ,patates kızartması ve ayı baharat eşliğinde</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/ezine20.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 120px;">Ezine Tost</h2>
+        </div>
+        <h5 class="card-fiyat">160 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-18')">Detaylar</h5>
+    
+        <div class="popup" id="popup-18">
+            <div class="overlay" onclick="togglePopup('popup-18')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-18')">&times;</div>
+                <h1>Ezine Tost</h1>
+                <p>Kare kepekli tost ekmeği,beyaz peynir,domates,taze kekik,ayı sos,patates kızartması ve ayı baharat eşliğinde</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/goz21.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size: 18px; left: 70px;">Patatesli Kaşarlı Gözleme</h2>
+        </div>
+        <h5 class="card-fiyat">150 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-19')">Detaylar</h5>
+    
+        <div class="popup" id="popup-19">
+            <div class="overlay" onclick="togglePopup('popup-19')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-19')">&times;</div>
+                <h1>Patatesli Kaşarlı Gözleme</h1>
+                <p>Patates kızartması ve ayı sos eşliğinde</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+                <img src="imgs/goz21.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 90px;">Kaşarlı Gözleme</h2>
+        </div>
+        <h5 class="card-fiyat">150 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-20')">Detaylar</h5>
+    
+        <div class="popup" id="popup-20">
+            <div class="overlay" onclick="togglePopup('popup-20')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-20')">&times;</div>
+                <h1>Kaşarlı Gözleme</h1>
+                <p>Patates kızartması ve ayı sos eşliğinde</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+                <img src="imgs/goz21.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 95px;">Patatesli Kaşarlı</h2>
+        </div>
+        <h5 class="card-fiyat">150 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-21')">Detaylar</h5>
+    
+        <div class="popup" id="popup-21">
+            <div class="overlay" onclick="togglePopup('popup-21')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-21')">&times;</div>
+                <h1>Patatesli Kaşarlı</h1>
+                <p>Patates kızartması ve ayı sos eşliğinde</p>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+<section id="pupsçitirlar">
+
+    <div class="imgler">
+    </div>
+
+    <h2 class="titleh2">Pups Çıtırlar</h2>
+
+
+    <div class="card">
+                <img src="imgs/patato22.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi"style="left: 90px;">Patates Kızartması</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    
+
+
+    <div class="card">
+                <img src="imgs/sogan23.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi"style="left: 100px;">Soğan Halkası</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-22')">Detaylar</h5>
+    
+        <div class="popup" id="popup-22">
+            <div class="overlay" onclick="togglePopup('popup-22')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-22')">&times;</div>
+                <h1>Soğan Halkası</h1>
+                <p>6 adet + patates kızartması</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+                <img src="imgs/nugget24.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 118px;">Nugget</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-23')">Detaylar</h5>
+    
+        <div class="popup" id="popup-23">
+            <div class="overlay" onclick="togglePopup('popup-23')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-23')">&times;</div>
+                <h1>Nugget</h1>
+                <p>6 adet + patates kızartması</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+                <img src="imgs/yildiz25.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 110px;">Yıldız Sosis</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-24')">Detaylar</h5>
+    
+        <div class="popup" id="popup-24">
+            <div class="overlay" onclick="togglePopup('popup-24')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-24')">&times;</div>
+                <h1>Yıldız Sosis</h1>
+                <p>6 adet + patates kızartması</p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    
+</section>
+    
+
+
+<section id="kumpir">
+
+    <div class="imgler">
+    </div>
+    <h2 class="titleh2">Kumpir</h2>
+    <div class="card">
+        <img src="imgs/kumpirnew.jpeg" style="height: 70px; width: 70px;" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 100px;">Ayı Kumpir</h2>
+        </div>
+        <h5 class="card-fiyat">160 ₺</h5>
+        <h5 class="detaylar" style="top: -40px;" onclick="togglePopup('popup-27')">Detaylar</h5>
+    
+        <div class="popup" id="popup-27">
+            <div class="overlay" onclick="togglePopup('popup-27')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-27')">&times;</div>
+                <h1>Ayı Kumpir</h1>
+                <p>Bolu patatesi ,tereyağ,kaşar peyniri,yeşil zeytin,siyah zeytin,kısır,sosis,havuç,mısır,turşu,rus salatası,mor lahana </p>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="ayipup">
+    <div class="imgler">
+    </div>
+    <h2 class="titleh2">Ayı Pup Tatlılar</h2>
+
+   
+    <div class="card">
+                <img src="imgs/magno26.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 115px;">Magnolia</h2>
+        </div>
+        <h5 class="card-fiyat">110 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-26')">Detaylar</h5>
+    
+        <div class="popup" id="popup-26">
+            <div class="overlay" onclick="togglePopup('popup-26')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-26')">&times;</div>
+                <h1>Magnolia</h1>
+                <p>Petibör ve çilek eşliğinde</p>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+                <img src="imgs/trima.png" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 115px;">Tiramisu</h2>
+        </div>
+        <h5 class="card-fiyat">110 ₺</h5>
+    </div>
+
+    <div class="card">
+                <img src="imgs/fistik.jpeg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title"style="left: 65px;">
+            <h2 class="urun-adi">Fıstık Rüyası</h2>
+        </div>
+        <h5 class="card-fiyat">130 ₺</h5>
+    </div>
+
+    <div class="card">
+                <img src="imgs/nutella.jpeg" style="width: 70px; height: 70px;" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title"style="left: 65px;">
+            <h2 class="urun-adi">Nutellalı Pasta</h2>
+        </div>
+        <h5 class="card-fiyat">130 ₺</h5>
+    </div>
+
+    
+    <div class="card">
+                <img src="imgs/waffle.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 105px;">Waffle Tabağı</h2>
+        </div>
+        <h5 class="card-fiyat">160 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-27')">Detaylar</h5>
+    
+        <div class="popup" id="popup-27">
+            <div class="overlay" onclick="togglePopup('popup-27')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-27')">&times;</div>
+                <h1>Waffle Tabağı</h1>
+                <p>Çilekli waffle, muzlu waffle,çilek ve muzlu waffle</p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+                <img src="imgs/sufle.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 128px;">Sufle</h2>
+        </div>
+        <h5 class="card-fiyat">130 ₺</h5>
+    </div>
+    <div class="card">
+                <img src="imgs/ches.jpeg" style="width: 70px; height: 70px;"  alt="Serpme Kahvaltı" class="urun-resmi">
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 85px; font-size: 18px;">El Yapımı Cheescake</h2>
+        </div>
+        <h5 class="card-fiyat">140 ₺</h5>
+    </div>
+   
+    
+    <div class="card">
+        <img src="imgs/sansebas.jpg" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 65px; font-size:18px;">San Sebastian Cheescake</h2>
+        </div>
+        <h5 class="card-fiyat">140 ₺</h5>
+        <h5 class="detaylar" onclick="togglePopup('popup-28')">Detaylar</h5>
+    
+        <div class="popup" id="popup-28">
+            <div class="overlay" onclick="togglePopup('popup-28')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-28')">&times;</div>
+                <h1>San Sebastian Cheescake</h1>
+                <p>Çikolata sos ile</p>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="sogukicecekler">
+    
+    <div class="imgler">
+    </div>
+
+    <h2 class="titleh2">Soğuk İçecekler</h2>
+    <div class="card">
+        <!-- <img src="imgs/frappe.jpeg" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left: 130px; ">Frappe</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" style="top: 50px;" onclick="togglePopup('popup-29')">Detaylar</h5>
+    
+        <div class="popup" id="popup-29">
+            <div class="overlay" onclick="togglePopup('popup-29')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-29')">&times;</div>
+                <h1>Frappe</h1>
+                <p>Vanilyalı , karamelli,oreolu,çikolatalı</p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <!-- <img src="imgs/MAGNOLI╠çA (2).jpg" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:115px; ">Milkshake</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" style="top: 50px;" onclick="togglePopup('popup-30')">Detaylar</h5>
+    
+        <div class="popup" id="popup-30">
+            <div class="overlay" onclick="togglePopup('popup-30')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-30')">&times;</div>
+                <h1>Milkshake</h1>
+                <p>Çilekli,muzlu,böğürtlen,kivili,tropikal meyveli,kırmızı orman meyveli,karadut,karamel,vanilya</p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <!-- <img src="imgs/MAGNOLI╠çA (2).jpg" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left: 125px; ">Frozen</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" style="top: 50px;" onclick="togglePopup('popup-31')">Detaylar</h5>
+    
+        <div class="popup" id="popup-31">
+            <div class="overlay" onclick="togglePopup('popup-31')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-31')">&times;</div>
+                <h1>Frozen</h1>
+                <p style="font-size: 18px;" >Kırmızı orman meyveli,misket limon,kavun,mango,karadut,
+                    frambuaz,böğürtlen,yeşil elma,karpuz,kivi,çilek</p>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="kokteyler">
+
+    <div class="imgler">
+    </div>
+
+    
+
+    <h2 class="titleh2">Kokteyler</h2>
+
+
+
+    <div class="card">
+        <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:105px;">Ice Ice Baby</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" style="top: -5px;" onclick="togglePopup('popup-32')">Detaylar</h5>
+    
+        <div class="popup" id="popup-32">
+            <div class="overlay" onclick="togglePopup('popup-32')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-32')">&times;</div>
+                <h1>Ice Ice Baby</h1>
+                <p>Ananas püresi,muz şurubu,limonata,demlenmiş hibiskus çayı</p>
+
+
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:125px;">Romeo</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" style="top: -5px;" onclick="togglePopup('popup-33')">Detaylar</h5>
+    
+        <div class="popup" id="popup-33">
+            <div class="overlay" onclick="togglePopup('popup-33')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-33')">&times;</div>
+                <h1>Romeo</h1>
+                <p>Tuzlu karamel şurubu,pikon cevizi şurubu,soğuk filtre kahve ,süt</p>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:125px;">Matrix</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" style="top: -5px;" onclick="togglePopup('popup-34')">Detaylar</h5>
+    
+        <div class="popup" id="popup-34">
+            <div class="overlay" onclick="togglePopup('popup-34')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-34')">&times;</div>
+                <h1>Matrix</h1>
+                <p>Tuzlu karamel sosu ,fındık şurubu,filtre kahve ,süt</p>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:100px;">Vırgın Mojito</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" style="top: -5px;" onclick="togglePopup('popup-35')">Detaylar</h5>
+    
+        <div class="popup" id="popup-35">
+            <div class="overlay" onclick="togglePopup('popup-35')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-35')">&times;</div>
+                <h1>Vırgın Mojito</h1>
+                <p>Meyve püresi,menta cubano şurubu,limonata,nane yaprağı,soda,buz</p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:135px;">Mars</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" style="top: -5px;" onclick="togglePopup('popup-36')">Detaylar</h5>
+    
+        <div class="popup" id="popup-36">
+            <div class="overlay" onclick="togglePopup('popup36')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-36')">&times;</div>
+                <h1>Mars</h1>
+                <p>Çilek şurubu,liçi şurubu,mavi kelebek çayı,yenilebilir gümüş tozu,soda</p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:135px;">Boop</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" style="top: -5px;" onclick="togglePopup('popup-237')">Detaylar</h5>
+    
+        <div class="popup" id="popup-37">
+            <div class="overlay" onclick="togglePopup('popup-37')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-37')">&times;</div>
+                <h1>Boop</h1>
+                <p>Tuzlu karamel sosu,fındık şurubu,soğuk filtre kahve,süt buz</p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:135px;">Ginza</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" style="top: -5px;" onclick="togglePopup('popup-38')">Detaylar</h5>
+    
+        <div class="popup" id="popup-38">
+            <div class="overlay" onclick="togglePopup('popup-38')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-38')">&times;</div>
+                <h1>Ginza</h1>
+                <p>Çarkıfelek meyve şurubu ,limonata,hibiskus çayı,buz</p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+   
+</section>
+
+
+
+
+
+
+<section id="ayispecial">
+
+    <div class="imgler">
+    </div>
+
+
+    <h2 class="titleh2">Ayı Special</h2>
+    <div class="card">
+        <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:110px;">Dev Panda</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" style="top: -10px;" onclick="togglePopup('popup-39')">Detaylar</h5>
+    
+        <div class="popup" id="popup-39">
+            <div class="overlay" onclick="togglePopup('popup-39')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-39')">&times;</div>
+                <h1>Dev Panda</h1>
+                <p>Buz ,portakal suyu,çilekli soda,böğürtlen</p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi">
+    <div class="card-title">
+        <h2 class="urun-adi" style="left: 90px;">American siyah Ayı</h2>
+    </div>
+    <h5 class="card-fiyat">120 ₺</h5>
+    <h5 class="detaylar" style="top: -10px;" onclick="togglePopup('popup-40')">Detaylar</h5>
+    <div class="popup" id="popup-40">
+        <div class="overlay" onclick="togglePopup('popup-40')"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup('popup-40')">&times;</div>
+            <h1>American siyah Ayı</h1>
+            <p>Buz,frambuaz,elmalı soda ,limonata</p>
+        </div>
+    </div>
+</div>
+
+        <div class="card">
+            <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi">
+            <div class="card-title">
+            <h2 class="urun-adi" style="left:130px;">Boz Ayı</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" style="top: -10px;" onclick="togglePopup('popup-41')">Detaylar</h5>
+    
+        <div class="popup" id="popup-41">
+            <div class="overlay" onclick="togglePopup('popup-41')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-41')">&times;</div>
+                <h1>Boz Ayı</h1>
+                <p>Buz ,limonata,portakal suyu,nane,elmalı soda</p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="card">
+            <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi">
+            <div class="card-title">
+            <h2 class="urun-adi" style="left:110px;">Malaya Ayısı</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" style="top: -10px;" onclick="togglePopup('popup-43')">Detaylar</h5>
+
+        <div class="popup" id="popup-43">
+            <div class="overlay" onclick="togglePopup('popup-43')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-43')">&times;</div>
+                <h1>Malaya Ayısı</h1>
+                <p>Buz ,limonata,mango,trunç</p>
+
+
+            </div>
+        </div>
+        </div>
+
+        <div class="card">
+            <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi">
+            <div class="card-title">
+            <h2 class="urun-adi" style="left:110px;">Gözlüklü Ayı</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+        <h5 class="detaylar" style="top: -10px;" onclick="togglePopup('popup-44')">Detaylar</h5>
+
+        <div class="popup" id="popup-44">
+            <div class="overlay" onclick="togglePopup('popup-44')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-44')">&times;</div>
+                <h1>Gözlüklü Ayı</h1>
+                <p>Buz,portakal suyu,kivi,elmalı soda,şeftali</p>
+
+
+            </div>
+        </div>
+        </div>
+
+
+        <div class="card">
+            <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi">
+            <div class="card-title">
+                <h2 class="urun-adi" style="left:110px;">Kutup Ayısı</h2>
+            </div>
+            <h5 class="card-fiyat">120 ₺</h5>
+            <h5 class="detaylar" style="top: -10px;" onclick="togglePopup('popup-78')">Detaylar</h5>
+    
+            <div class="popup" id="popup-78">
+                <div class="overlay" onclick="togglePopup('popup-78')"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup('popup-78')">&times;</div>
+                    <h1>Kutup Ayısı</h1>
+                    <p>Buz ,portakal suyu,şeftali,turunç,sprite</p>
+    
+    
+                </div>
+            </div>
+            </div>
+    
+
+
+</section>
+
+<section id="bubbletea">
+
+    <div class="imgler">
+    </div>
+
+
+    <h2 class="titleh2" >Bubble Tea</h2>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:90px;">Meyve Aromalı</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:90px;">Kahve Aromalı</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:110px;">Cool Lime</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+    </div>
+</section>
+
+
+
+
+
+
+<section id="baristaninruhhali">
+
+    <div class="imgler">
+    </div>
+
+
+    <h2 class="titleh2">Baristanın Ruh Hali</h2>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:90px;">Tatlı veya Ekşi</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+    </div></section>
+
+
+
+
+
+<section id="filtrekahveler">
+    <div class="imgler">
+    </div>
+
+    <h2 class="titleh2">Filtre Kahveler</h2>
+
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:112px;">Hazelnut</h2>
+        </div>
+        <h5 class="card-fiyat">80 ₺</h5>
+        <h5 class="detaylar" style="top: 50px;" onclick="togglePopup('popup-45')">Detaylar</h5>
+
+        <div class="popup" id="popup-45">
+            <div class="overlay" onclick="togglePopup('popup-45')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-45')">&times;</div>
+                <h1>Hazelnut</h1>
+                <p>Fındık aromalı kahve </p>
+
+
+            </div>
+        </div>
+        </div>
+
+
+        <div class="card">
+            <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+            <div class="card-title">
+                <h2 class="urun-adi" style="left: 80px;">Chocolate Raspberry</h2>
+            </div>
+            <h5 class="card-fiyat">80 ₺</h5>
+            <h5 class="detaylar" style="top: 50px;" onclick="togglePopup('popup-46')">Detaylar</h5>
+    
+            <div class="popup" id="popup-46">
+                <div class="overlay" onclick="togglePopup('popup-46')"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup('popup-46')">&times;</div>
+                    <h1>Chocolate Raspberry</h1>
+                    <p>Çikolatalı ve frambuazlı kahve içindeki uyumu</p>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+                <div class="card-title">
+                    <h2 class="urun-adi" style="left:110px;">Irish Cream</h2>
+                </div>
+                <h5 class="card-fiyat">80 ₺</h5>
+                <h5 class="detaylar" style="top: 50px;" onclick="togglePopup('popup-47')">Detaylar</h5>
+        
+                <div class="popup" id="popup-47">
+                    <div class="overlay" onclick="togglePopup('popup-47')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-47')">&times;</div>
+                        <h1>Irish Cream</h1>
+                        <p>İrlanda kremalı koyu kahve</p>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="card">
+                    <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+                    <div class="card-title">
+                        <h2 class="urun-adi" style="left:90px;">Sade Filtre Kahve</h2>
+                    </div>
+                    <h5 class="card-fiyat">80 ₺</h5>
+                    <h5 class="detaylar" style="top: 50px;" onclick="togglePopup('popup-48')">Detaylar</h5>
+            
+                    <div class="popup" id="popup-48">
+                        <div class="overlay" onclick="togglePopup('popup-48')"></div>
+                        <div class="content">
+                            <div class="close-btn" onclick="togglePopup('popup-48')">&times;</div>
+                            <h1>Sade Filtre Kahve</h1>
+                            <p>Günün her saatinde size eşlik edecek kahve</p>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    <div class="card">
+                        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+                        <div class="card-title">
+                            <h2 class="urun-adi" style="left:95px;">French Vanillia</h2>
+                        </div>
+                        <h5 class="card-fiyat">80 ₺</h5>
+                        <h5 class="detaylar" style="top: 50px;" onclick="togglePopup('popup-49')">Detaylar</h5>
+                
+                        <div class="popup" id="popup-49">
+                            <div class="overlay" onclick="togglePopup('popup-49')"></div>
+                            <div class="content">
+                                <div class="close-btn" onclick="togglePopup('popup-49')">&times;</div>
+                                <h1>French Vanillia</h1>
+                                <p>Afrika kökenli hoş kokulu gurme kahve lezzeti vanilya aroması</p>
+                            </div>
+                        </div>
+                        </div>
+</section>
+
+<section id="meyvebitkicaylari">
+
+    <div class="imgler">
+    </div>
+
+
+    <h2 class="titleh2">Meyve & Bitki Çayları</h2>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:120px;">Kuşburnu</h2>
+        </div>
+        <h5 class="card-fiyat">90 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:110px;">Elma Tarçın</h2>
+        </div>
+        <h5 class="card-fiyat">90 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:85px; font-size: 18px;">Kırmızı Orman Meyveli</h2>
+        </div>
+        <h5 class="card-fiyat">90 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:125px;">Kış Çayı</h2>
+        </div>
+        <h5 class="card-fiyat">90 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:125px;">Ada Çayı</h2>
+        </div>
+        <h5 class="card-fiyat">90 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:125px;">Yeşil Çay</h2>
+        </div>
+        <h5 class="card-fiyat">90 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:110px;">Papatya Çayı</h2>
+        </div>
+        <h5 class="card-fiyat">90 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:110px;">Nane Limon</h2>
+        </div>
+        <h5 class="card-fiyat">90 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:120px;">Ihlamur</h2>
+        </div>
+        <h5 class="card-fiyat">90 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:110px;">Ekstra Süt-Bal</h2>
+        </div>
+        <h5 class="card-fiyat">10 ₺</h5>
+    </div>
+   
+
+</section>
+
+<section id="kahvecesitleri">
+
+    <div class="imgler">
+    </div>
+
+
+    <h2 class="titleh2">Kahve Çeşitleri</h2>
+
+
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:125px;">Expresso</h2>
+        </div>
+        <h5 class="card-fiyat">50 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:110px;">Americano</h2>
+        </div>
+        <h5 class="card-fiyat">80 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:110px;">Cappucino</h2>
+        </div>
+        <h5 class="card-fiyat">90 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 90px;">Sütlü Gold Kahve</h2>
+        </div>
+        <h5 class="card-fiyat">80 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:130px;">Mocha</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size: 18px;left:80px;">White Chocolate Mocha</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:135px;">Latte</h2>
+        </div>
+        <h5 class="card-fiyat">90 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:110px;">Flat White</h2>
+        </div>
+        <h5 class="card-fiyat">90 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:95px;">Chai Tea Latte</h2>
+        </div>
+        <h5 class="card-fiyat">90 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:120px;">Cortado</h2>
+        </div>
+        <h5 class="card-fiyat">80 ₺</h5>
+    </div>
+    <div class="card">
+        <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 90px;">Karamel Machiato</h2>
+        </div>
+        <h5 class="card-fiyat">110 ₺</h5>
+    </div>
+    <div class="card">
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size: 18px; left:8px;   top: -13px; position: relative;">Laktozsuz Süt İle İsteyebilirsiniz</h2>
+        </div>
+        <h5 class="card-fiyat">10 ₺</h5>
+    </div>
+
+</section>
+
+
+
+
+<section id="sicakspecial">
+
+    <div class="imgler">
+    </div>
+
+    <h2 class="titleh2">Sıcak Special İçecekler</h2>
+
+
+
+ <div class="card">
+            <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left: 90px;">Beyaz Sıcak Çikolata</h2>
+        </div>
+        <h5 class="card-fiyat">110 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:100px;">Sıcak Çikolata </h2>
+        </div>
+        <h5 class="card-fiyat">110 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:90px;">Salted Caramel Latte</h2>
+        </div>
+        <h5 class="card-fiyat">110 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size: 18px; left: 82px;">Peonut & Caramel Latte</h2>
+        </div>
+        <h5 class="card-fiyat">110 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:80px;">Pumpkin Spice Latte</h2>
+        </div>
+        <h5 class="card-fiyat">110 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+
+        <div class="card-title">
+            <h2 class="urun-adi"style="font-size: 18px; left:70px;">Chocalate & Cookie Latte</h2>
+        </div>
+        <h5 class="card-fiyat">110 ₺</h5>
+    </div>
+</section>
+
+<section id="sıkmaicecekler">
+
+    <div class="imgler">
+    </div>
+
+    <h2 class="titleh2">Sıkma İçecekler</h2>
+
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size: 18px;">Taze Sıkılmış Portakal Suyu</h2>
+        </div>
+        <h5 class="card-fiyat">120 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="font-size: 18px;left:90px; ">Ev Yapımı Limonata </h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size: 18px; left: 70px;">Çilekli Ev Yapımı Limonata </h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+
+</section>
+
+
+
+<section id="sogukkahveler">
+
+    <div class="imgler">
+    </div>
+
+
+    <h2 class="titleh2">Soğuk Kahveler</h2>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:120px;">Ice Latte</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:120px;">Ice Filtre</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:100px;">Ice Americano</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:120px;">Ice Mocha</h2>
+        </div>
+        <h5 class="card-fiyat">110 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:100px;">Ice White Mocha</h2>
+        </div>
+        <h5 class="card-fiyat">110 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:85px;">Ice Karamel Machiato</h2>
+        </div>
+        <h5 class="card-fiyat">110 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:120px;">Affagato</h2>
+        </div>
+        <h5 class="card-fiyat">110 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:115px;">Cold Brew</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:80px;">Soğuk Beyaz Çikolata</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:100px;">Soğuk Çikolata</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+</section>
+
+<section id="sahlepçikolata">
+
+    <div class="imgler">
+    </div>
+
+
+    <h2 class="titleh2">Sahlep & Çikolata Çeşitleri</h2>
+
+
+    <div class="card">
+                <!-- <img src="imgs/salep.jpg" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:130px;">Sahlep</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:100px;">Sıcak Çikolata</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:100px;">Beyaz Çikolata</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:90px;">Damla Sakızlı Sahlep</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:90px;">Antep Fıstıklı Sahlep</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:90px;">Ballı Bademli Sahlep</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+</section>
+
+<section id="caycesitleri">
+
+    <div class="imgler">
+    </div>
+
+
+
+    <h2 class="titleh2">Çay Çeşitleri</h2>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:138px;">Çay</h2>
+        </div>
+        <h5 class="card-fiyat">30 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:105px;">Fincan Çay</h2>
+        </div>
+        <h5 class="card-fiyat">45 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:120px;">Sütlü Çay</h2>
+        </div>
+        <h5 class="card-fiyat">50 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:120px;">Ballı Süt</h2>
+        </div>
+        <h5 class="card-fiyat">70 ₺</h5>
+    </div>
+</section>
+
+<section id="turkkahveleri">
+    
+    <div class="imgler">
+    </div>
+
+
+    <h2 class="titleh2">Türk Kahveleri</h2>
+    <div class="card">
+                <img src="imgs/turk123.png" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:90px;">Türk Kahvesi</h2>
+        </div>
+        <h5 class="card-fiyat">65 ₺</h5>
+    </div>
+    <div class="card">
+                <img src="imgs/turk123.png" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size: 18px; left: 65px;">Damla Sakızlı Türk Kahvesi</h2>
+        </div>
+        <h5 class="card-fiyat">65 ₺</h5>
+    </div>
+    <div class="card">
+                <img src="imgs/turk123.png" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size: 18px; left: 68px;">Dağ Çilekli Türk Kahvesi</h2>
+        </div>
+        <h5 class="card-fiyat">65 ₺</h5>
+    </div>
+    <div class="card">
+                <img src="imgs/turk123.png" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:90px;">Dibek Türk Kahvesi</h2>
+        </div>
+        <h5 class="card-fiyat">70 ₺</h5>
+    </div>
+    <div class="card">
+                <img src="imgs/turk123.png" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi" style="font-size: 18px; left: 80px;">Menengiç Türk Kahvesi</h2>
+        </div>
+        <h5 class="card-fiyat">70 ₺</h5>
+    </div>
+    <div class="card">
+                <img src="imgs/turk123.png" alt="Serpme Kahvaltı" class="urun-resmi">
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:90px;">Sütlü Türk Kahvesi</h2>
+        </div>
+        <h5 class="card-fiyat">70 ₺</h5>
+    </div>
+</section>
+
+<section id="icecekler">
+
+    <div class="imgler">
+    </div>
+
+    <h2 class="titleh2">İçecekler</h2>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:140px;">Su</h2>
+        </div>
+        <h5 class="card-fiyat">20 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:130px;">Soda</h2>
+        </div>
+        <h5 class="card-fiyat">45 ₺</h5>
+    </div>
+   
+
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:95px;">Meyveli Soda</h2>
+        </div>
+        <h5 class="card-fiyat">55 ₺</h5>
+        <h5 class="detaylar" style="top:50px;" onclick="togglePopup('popup-50')">Detaylar</h5>
+
+        <div class="popup" id="popup-50">
+            <div class="overlay" onclick="togglePopup('popup-50')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-50')">&times;</div>
+                <h1>Meyveli Soda</h1>
+                <p>Limon, elma,karpuz çilek,çilek</p>
+            </div>
+        </div>
+        </div>
+
+
+
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:110px;">Churchill</h2>
+        </div>
+        <h5 class="card-fiyat">65 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/cay.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi" style="left:90px;">Soda + Limon</h2>
+        </div>
+        <h5 class="card-fiyat">65 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/cay.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:125px;">Ayran</h2>
+        </div>
+        <h5 class="card-fiyat">60 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/cay.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:115px;">Redbull</h2>
+        </div>
+        <h5 class="card-fiyat">100 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/cay.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:110px;">Coca Cola</h2>
+        </div>
+        <h5 class="card-fiyat">60 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/cay.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:125px;">Fanta</h2>
+        </div>
+        <h5 class="card-fiyat">60 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/salep.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:125px;">Cappy</h2>
+        </div>
+        <h5 class="card-fiyat">60 ₺</h5>
+    </div>
+    <div class="card">
+                <!-- <img src="imgs/cay.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:100px;">Schweppes</h2>
+        </div>
+        <h5 class="card-fiyat">60 ₺</h5>
+    </div>
+   
+
+   
+
+    <div class="card">
+        <!-- <img src="imgs/frappe.jpeg" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+        <div class="card-title">
+            <h2 class="urun-adi"style="left:106px;">Frutti Extra</h2>
+        </div>
+        <h5 class="card-fiyat">60 ₺</h5>
+        <h5 class="detaylar" style="top:50px;" onclick="togglePopup('popup-51')">Detaylar</h5>
+
+        <div class="popup" id="popup-51">
+            <div class="overlay" onclick="togglePopup('popup-51')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup('popup-51')">&times;</div>
+                <h1>Frutti Extra</h1>
+                <p>Armut,kavun,mandalina,orman meyveli ,yeşil limonlu,tropikal</p>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+                    <!-- <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+            <div class="card-title">
+                <h2 class="urun-adi"style="left:95px;">S.Pellegrino</h2>
+            </div>
+            <h5 class="card-fiyat">100 ₺</h5>
+        </div>
+       
+
+        <div class="card">
+                    <!-- <img src="imgs/koktey.jpeg" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+            <div class="card-title">
+                <h2 class="urun-adi"style="left:95px;">S.Pellegrino</h2>
+            </div>
+            <h5 class="card-fiyat">110 ₺</h5>
+            <h5 class="detaylar" style="top: 50px;" onclick="togglePopup('popup-79')">Detaylar</h5>
+        
+            <div class="popup" id="popup-79">
+                <div class="overlay" onclick="togglePopup('popup-79')"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup('popup-79')">&times;</div>
+                    <h1>Plombir</h1>
+                    <p style="font-size: 24px;">Limonata,portakal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section id="nargile">
+        <div class="imgler">
+        </div>
+    
+        <h2  class="titleh2">Nargile</h2>
+        <div class="card">
+                    <!-- <img src="imgs/nargile1.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+            <div class="card-title">
+                <h2 class="urun-adi"style="left:128px;">Adalya</h2>
+            </div>
+            <h5 class="card-fiyat">300 ₺</h5>
+            <h5 class="detaylar"  style="top:50px;" onclick="togglePopup('popup-52')">Detaylar</h5>
+        
+            <div class="popup" id="popup-52">
+                <div class="overlay" onclick="togglePopup('popup-52')"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup('popup-52')">&times;</div>
+                    <h1>Adalya</h1>
+                    <p> Love 66,Lady Killer,İzmir Romantic, Marilyn Monroe, Ice Bonbon ,Hawaii, Çift Elma,Swiss Bonbon,Bakü Nights </p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="card">
+                    <!-- <img src="imgs/nargile1.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+            <div class="card-title">
+                <h2 class="urun-adi"style="left:115px;">Al Fakher</h2>
+            </div>
+            <h5 class="card-fiyat">300 ₺</h5>
+            <h5 class="detaylar" style="top:50px;" onclick="togglePopup('popup-53')">Detaylar</h5>
+        
+            <div class="popup" id="popup-53">
+                <div class="overlay" onclick="togglePopup('popup-53')"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup('popup-53')">&times;</div>
+                    <h1>Al Fakher</h1>
+                    <p> Dejavu ,Cappucino,Çift Elma</p>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="card">
+                    <!-- <img src="imgs/nargile1.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+            <div class="card-title">
+                <h2 class="urun-adi"style="left:130px;">Jibiar</h2>
+            </div>
+            <h5 class="card-fiyat">300 ₺</h5>
+            <h5 class="detaylar" style="top:50px;" onclick="togglePopup('popup-54')">Detaylar</h5>
+        
+            <div class="popup" id="popup-54">
+                <div class="overlay" onclick="togglePopup('popup-54')"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup('popup-54')">&times;</div>
+                    <h1>Jibiar</h1>
+                    <p> Dejavu,Plomber,Swiss Bonbon,Turkish Mastic, Love</p>
+                </div>
+            </div>
+        </div>
+
+
+     
+       
+     
+
+
+       
+        <div class="card">
+                    <!-- <img src="imgs/nargile1.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+            <div class="card-title">
+                <h2 class="urun-adi"style="left:115px;">Manterra</h2>
+            </div>
+            <h5 class="card-fiyat">350 ₺</h5>
+            <h5 class="detaylar" style="top:50px;" onclick="togglePopup('popup-55')">Detaylar</h5>
+        
+            <div class="popup" id="popup-55">
+                <div class="overlay" onclick="togglePopup('popup-55')"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup('popup-55')">&times;</div>
+                    <h1> Manterna</h1>
+                    <p> Dark Tütünler </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+                    <!-- <img src="imgs/nargile1.png" alt="Serpme Kahvaltı" class="urun-resmi"> -->
+            <div class="card-title">
+                <h2 class="urun-adi" style="left:125px;">Nakhla </h2>
+            </div>
+            <h5 class="card-fiyat">300 ₺</h5>
+            <h5 class="detaylar" style="top:50px;" onclick="togglePopup('popup-56')">Detaylar</h5>
+        
+            <div class="popup" id="popup-56">
+                <div class="overlay" onclick="togglePopup('popup-56')"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup('popup-56')">&times;</div>
+                    <h1>Turkish Mastic</h1>
+                    <p> Damla Sakızı</p>
+                </div>
+            </div>
+        </div>
+       
+    
+
+        </section>
+    
+
+
+<script src="script.js"></script>
+   
+
+<script>
+    function togglePopup(popupId) {
+        // Tüm açık popup'ları kapat
+        var allPopups = document.querySelectorAll(".popup");
+        allPopups.forEach(function(popup) {
+            if (popup.id !== popupId) {
+                popup.classList.remove("active");
+            }
+        });
+
+        // Tıklanan popup'ı aç veya kapat
+        var popup = document.getElementById(popupId);
+        popup.classList.toggle("active");
+    }
+</script>
+</body>
+</html>

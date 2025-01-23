@@ -1,0 +1,517 @@
+r* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.title111 {
+    text-align: center;
+    position: fixed; /* Absolute yerine fixed kullanıldı */
+    font-size: 40px;
+    color: rgb(244, 244, 244);
+    left: 29%; /* Soldan sabit mesafe */
+    top: -10px;  /* Üstten mesafe eklenebilir */
+    padding: 10px;
+    border-radius: 5px;
+}
+.menu-container {
+    display: flex;
+    border-radius: 13px;
+    overflow-x: auto; /* Yatay kaydırma için */
+    white-space: nowrap;
+    width: 100%;
+    left: -20px;
+    padding: 50px;
+    right: 10%;
+    top: 0%;
+    scrollbar-width: none;
+    z-index: 1000   ;   
+    background-color: #501c03;
+}
+.menu-item {
+    position: relative;
+    top: 40px;
+    left: -24px;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    display: contents;
+    padding: 8px 10px;
+    background-color: #e16315;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item a {
+    text-decoration: none; /* Alt çizgi olmaması için */
+    color: white; /* Yazı rengini beyaz yap */
+}
+
+.menu-item:hover {
+    background-color: #b58686;
+}
+/* cardlar */
+.card{
+    padding: 10px 10px;
+    position: relative;
+    left: 41%;
+    margin-bottom: 10px;
+    background-color: rgba(238, 221, 221, 0.276);
+    width: 420px;
+    border: px solid #b2afaf;
+    height: 80px;
+    border-radius: 9px;
+    text-align: center;
+    justify-content: center;
+}
+.urun-adi{
+    font-size: 18px;
+    position: relative;
+    left: 60px;
+    top: -15px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.urun-resmi{
+    width: 70px;
+    height: 70px;
+    object-fit:cover;
+    left: -125px;
+    top: 9px;
+    position: relative;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titleh2{
+    position: relative;
+    text-align: center;
+    left:-30px;
+    top:-12px;
+    justify-content: center;
+    color: #9a9696;
+}
+.card-title{
+    position: absolute;
+    left: 19px;
+    text-align: center;
+    font-size: 29px;
+    color: #000000;
+    top: 18px;
+}
+.card-fiyat{
+    position:relative;
+    left:30px;
+    font-size: x-large;
+    margin-top:24%;
+    color: #7b3604;
+}
+.h2{
+    left: 10%;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+.detaylar{
+    position: relative;
+    margin-top: 2px;
+    top:-20px;
+    width: 90px;
+    text-align: center;
+    right: -65%;
+    height: 25px;
+    color: #ae520f;
+    font-size: 14px;
+    margin-inline-start: 65%;
+    }
+.popup .content{
+position: absolute;
+top: 50%;
+background: #fff;
+left: 52%;
+transform: translate(-50%,-50%) scale(0);
+width: 450px;
+height: 220px;
+text-align: center;
+padding: 20px;
+box-sizing: border-box;
+z-index: 2;
+}
+
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #9a9696;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.popup.active .overlay{
+
+    display: block;
+}
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+transform: translate(-50%,-50%) scale(1);
+}
+/* resimler */
+.img1{
+    position: relative;
+    width: 325px;
+    height: 325px;
+    left: 40%;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+/* responsive */
+
+
+
+@media (min-width: 320px) { 
+    .urun-resmi{
+        width: 70px;
+        height: 70px;
+        object-fit:cover;
+        left: -125px;
+        top: 9px;
+        position: relative;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .title111 {
+        text-align: center;
+        position: fixed; /* Absolute yerine fixed kullanıldı */
+        font-size: 40px;
+        color: rgb(244, 244, 244);
+        left: 22%; /* Soldan sabit mesafe */
+        top: -10px;  /* Üstten mesafe eklenebilir */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .logo-image{
+        position: relative;
+        width: 325px;
+        height: 325px;
+        left: 7%;
+        border-radius: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu-container {
+        position: fixed;
+        left: -23px;
+        font-size: 11px;
+        text-align: center;
+    }
+.card{
+    position: relative;
+    width: 330px;
+    padding: 8px 1px;
+    margin-inline-start: -39.8%;
+}
+.card-title{
+    font-size: 13px;
+}
+.card-fiyat{
+    position: absolute;
+    right:10px;
+    font-size: 20px;
+    top: -26px;
+}
+.detaylar{
+    position: relative;
+    font-size: 14px;
+    margin-inline-start:-1%;
+}
+.titleh2{
+        position: relative;
+        font-size: 25px;
+        left: -14px;
+        margin-bottom:8px;
+        margin-inline-start:25px;
+}
+
+.logo{
+    position: relative;
+    top: 58.5px;
+}
+.popup .content{
+    position: absolute;
+    border-radius: 30px;
+    top: 40%;
+    background: #fcfbf9;
+    left: 52%;
+    transform: translate(-50%,-50%) scale(0);
+    width: 300px;
+    height: 220px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ff7f00;
+    box-sizing: border-box;
+    z-index: 2;
+    }
+    .popup .close-btn{
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        background: #9a9696;
+        color: #713606;
+        font-size: 25px;
+        text-align: center;
+        border-radius: 40%;
+        border: 2px solid #d31309;
+    }
+    .img1{
+        position: relative;
+        margin-inline-start: -37.5%;
+        border-radius: 10px;
+        }
+ }
+ @media (min-width: 345px) { 
+    .urun-resmi{
+        width: 70px;
+        height: 70px;
+        object-fit:cover;
+        left: -125px;
+        top: 9px;
+        position: relative;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card{
+        position: relative;
+        width: 330px;
+        padding: 4px 1px;
+        margin-inline-start: -33%;
+    }
+    .title111 {
+        text-align: center;
+        position: fixed; /* Absolute yerine fixed kullanıldı */
+        font-size: 40px;
+        color: rgb(244, 244, 244);
+        left: 25%; /* Soldan sabit mesafe */
+        top: -10px;  /* Üstten mesafe eklenebilir */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .titleh2{
+        position: relative;
+        margin-inline-start:9%;
+    }
+    .img1{
+        position: relative;
+        margin-inline-start: -31%;
+        border-radius: 10px;
+        }
+}
+@media (min-width: 360px) {
+    .urun-resmi{
+        width: 70px;
+        height: 70px;
+        object-fit:cover;
+        left: -125px;
+        top: 9px;
+        position: relative;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .card{
+        position: relative;
+        margin-inline-start: -38.5%;
+    } 
+    .img1{
+        left: 34%;
+    }
+    .logo{position: relative;
+        left: -10px;
+    }
+
+
+}
+@media (min-width: 375px) { 
+    .urun-resmi{
+        width: 70px;
+        height: 70px;
+        object-fit:cover;
+        left: -125px;
+        top: 2px;
+        position: relative;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .title111 {
+        text-align: center;
+        position: fixed; /* Absolute yerine fixed kullanıldı */
+        font-size: 40px;
+        color: rgb(244, 244, 244);
+        left: 24%; /* Soldan sabit mesafe */
+        top: -10px;  /* Üstten mesafe eklenebilir */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .card{
+        position: relative;
+        margin-inline-start:-37%;
+    }
+    .titleh2{
+        position: relative;
+        margin-inline-start:13%;
+    }
+    .img1{
+        position: relative;
+        left: 36.8%;
+        border-radius: 10px;
+    }
+}
+@media (min-width: 412px) { 
+    .card{
+        position: relative;
+        margin-inline-start: -32%;
+    }
+    .img1{
+        position: relative;
+        left: 40.9%;
+        border-radius: 10px;
+    }
+    
+}
+
+@media (min-width: 414px) { 
+.card{
+    position: relative;
+    margin-inline-start: -33%;
+}
+.img1{
+    position: relative;
+    left: 40.8%;
+    border-radius: 10px;
+}
+.popup .content{
+    position: absolute;
+    border-radius: 30px;
+    top: 40%;
+    background: #fcfbf9;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    width: 340px;
+    height: 195px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ff7f00;
+    box-sizing: border-box;
+    z-index: 2;
+    }
+
+}
+@media (min-width: 420px) { 
+    .card{
+        position: relative;
+        margin-inline-start:-31%;
+    }
+    .titleh2{
+        position: relative;
+        margin-inline-start:15%;
+    }
+    .img1{
+        position: relative;
+        left: 42%;
+        border-radius: 10px;
+    }
+}
+
+
+@media (min-width: 540px) { 
+    .card{
+        position: relative;
+        margin-inline-start: -20%;
+    }
+    .titleh2{
+        position: relative;
+        margin-inline-start:22%;
+    }
+    .img1{
+        position: relative;
+        left: 55%;
+        border-radius: 10px;
+    }
+}
+
+
+
+@media (min-width: 768px) { 
+    .card{
+            width: 330px;
+            padding: 4px 1px;
+            text-align: center;
+            margin-inline-start:-13%;
+    }
+    .titleh2{
+        position: relative;
+        margin-inline-start:17px;
+        text-align: center;
+    }
+    .img1{
+        position: relative;
+        left: 59%;
+        border-radius: 10px;
+    }
+    .title111 {
+        text-align: center;
+        position: fixed; /* Absolute yerine fixed kullanıldı */
+        font-size: 40px;
+        color: rgb(244, 244, 244);
+        left: 45%; /* Soldan sabit mesafe */
+        top: -10px;  /* Üstten mesafe eklenebilir */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    }
+
+
+@media (min-width: 1024px) { 
+    .card{
+        position: relative;
+        margin-inline-start:-1%;
+        top: 20px;
+    }
+    .titleh2 {
+        position: relative;
+        margin-inline-start:8%;
+        text-align: center;
+    }
+    .img1{
+        position: relative;
+        left: 71%;
+        border-radius: 10px;
+        }
+        .logo-image{
+            left: 40%;
+        }
+}
